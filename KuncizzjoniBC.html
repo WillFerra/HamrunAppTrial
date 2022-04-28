@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS.css">
+        <meta name="viewport" content="width=device-width">
+        <style> 
+            h1 {text-align: center;}
+            h1 {font-family: Arial, Helvetica, sans-serif;}
+            h2 {text-align: center;}
+            h2 {font-family: Arial, Helvetica, sans-serif;}
+            p {text-align: justify;}
+            p {font-family: Arial, Helvetica, sans-serif;}
+        </style>
+
+        <body style="background-color: rgb(255, 252, 237)"></body>
+        
+        <!-- Adding the icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Add font awesome icon to buttons  -->         
+        <button onclick="window.location.href='https://goo.gl/maps/1ouCwmH4wt1ZeB5m7';" class="btn1"><i class="fa fa-compass"></i></button>
+        <button onclick="window.location.href='Clubs.html';" class="btn2"><i class="fa fa-arrow-left"></i></button>
+    
+        <!-- Adding the Hamrun Local Logo -->
+        <img src="Arma Hamrun.png" alt="Arma" class="logocentre"/>
+
+        <!-- Adding the header -->
+        <h1>Il-Ħamrun</h1>
+
+        <!-- Adding the sub-header -->
+        <h2>Immaculate Conception Band Club</h2> 
+        
+        <!-- Adding the body -->
+        <p>
+            The Immaculate Conception Band Club was founded in the year 1978 when a certain Tony Borg and some of his friends decided to 
+            start working towards establishing a new musical society in Hamrun. The need for a new musical society was rapidly increasing 
+            when a new parish in Hamrun was founded and the population in the area was 
+            increasing. <!-- Creating the Read More --> <span id="dots">...</span><span id="more"> 
+        
+            <img src="Liberty.png" alt="Hamrun Libery Logo"  style="width:170px;height:auto;margin-left:15px;" class="infoimgright"/>
+            <br>
+            <br>
+            
+            Tony Borg’s vision became a reality a year later, when on the 22nd of August of the year 1979, the first general meeting of the 
+            new society was held in the Victoria United Football Club in Barth Street. With time, the meeting place changed multiple times. 
+            From the Victoria United Football Club, they moved to a garage in ‘Kanonku Bonnici’ Street, after which they moved to another place 
+            in Guze Pace Street and also in Villambrosa Street until a house in the more central ‘Kappillan Mifsud’ Street was bought. On the 
+            1st of August 2002, the club moved again to a house in ‘Kappillan Muscat’ Square, a few metres away from the parish church. This new 
+            club was officially opened on the 29th of August 2004 from the then President of the Republic of Malta Guido de Marco.<br><br>
+
+            The first band conductor of the newly founded club was Alfonse Maria Vella. The club went through many changes in order to keep 
+            growing and improving. In 1993, during a general meeting, it was decided to change the colour associated with the club. The colour 
+            was changed from yellow to light blue. During this meeting, the Nome di Maria emblem in the centre of the club flag was also changed.<br><br>
+
+            <img src="Libertydecor.jpeg" alt="Statue Liberty" style="width:170px;height:auto;margin-right:15px;" class="infoimgleft"/>
+
+            The club’s band gave many performances since it was founded. Some of these include performances in the feasts of Bidnija, Dingli, 
+            St. Venera and Marsaxloxx. The band participated in the visit of Pope St. John Paul II. It also took part and played during the 
+            Small Nations Games, during a celebration after Hamrun Spartans won the football tournament and many other activities held in Hamrun 
+            along the years. The band also played during Carnival, the opening of the Serenity Ward in St. Vincent de Paul and was also invited to 
+            play during celebrations held in the century of the other Hamrun Band Clubs, that of St. Joseph, in 1989 and St. Cajetan, in 2006.</span>
+        </p>
+
+        <!-- Creating the button -->
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <br>
+        <br>
+
+        <!-- Code for button to work -->
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+            
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } 
+                else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                } 
+            }
+            </script>
+            
+        <img src="Libertyclub.jpeg" alt="Club" class="responsive"/>
+    </head>
+</html>

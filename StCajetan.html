@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS.css">
+        <meta name="viewport" content="width=device-width">
+        <style> 
+            h1 {text-align: center;}
+            h1 {font-family: Arial, Helvetica, sans-serif;}
+            h2 {text-align: center;}
+            h2 {font-family: Arial, Helvetica, sans-serif;}
+            p {text-align: justify;}
+            p {font-family: Arial, Helvetica, sans-serif;}
+        </style>
+
+        <body style="background-color: rgb(255, 252, 237)"></body>
+        
+        <!-- Adding the icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Add font awesome icon to buttons  -->         
+        <button onclick="window.location.href='https://goo.gl/maps/DmP6qMUC1W3adBiE7';" class="btn1"><i class="fa fa-compass"></i></button>
+        <button onclick="window.location.href='PlacesofInterest.html';" class="btn2"><i class="fa fa-arrow-left"></i></button>
+    
+        <!-- Adding the Hamrun Local Logo -->
+        <img src="Arma Hamrun.png" alt="Arma" class="logocentre"/>
+
+        <!-- Adding the header -->
+        <h1>Il-Ħamrun</h1>
+
+        <!-- Adding the sub-header -->
+        <h2>Saint Cajetan Parish Church</h1> 
+
+        <!-- Adding the body -->
+        <p>
+            The Parish Church of St Cajetan of Thiene is a Roman Catholic parish church in Ħamrun, Malta, dedicated to Saint Cajetan. 
+            The church was constructed between 1869 and 1875 to designs of Giorgio Costantino Schinas, in a combination of architectural styles. 
+            The oratory and dome were added later on in the 1890s and 1950s; the latter was designed by Andrea Vassallo and it was constructed under 
+            the direction of Ġużè Damato. <!-- Creating the Read More --> <span id="dots">...</span><span id="more"> 
+        
+            <img src="Knisja.png" alt="Church"  style="width:170px;height:auto;margin-left:15px;" class="infoimgright"/>
+            <br>
+            <br>
+            
+            As the settlement of Casale San Giuseppe (as Ħamrun was then known) began to grow in the 19th century, the two old churches dedicated to 
+            Our Lady of Atocia (tas-Samra) and Our Lady of Porto Salvo (ta' Nuzzu) became too small to cater for the area. Therefore, the decision was taken to 
+            construct a new church, and it was dedicated to Saint Cajetan according to the wishes of Bishop Gaetano Pace Forno, instead of Saint Joseph, to whom 
+            there was popular devotion in the area.<br> <br>
+            
+            The foundation stone of the new church was laid down on 13 June 1869, on a plot of land donated by the Judge Giovanni Conti. Funds were raised by the 
+            government, the population and some benefactors, and the building was designed by the architect Giorgio Costantino Schinas. The building was completed 
+            in 1875, being inaugurated on 11 July of that year by Bishop Carmelo Scicluna. At the time of its construction, the area still formed part of the parish 
+            of Qormi, but Ħamrun became a separate parish on 1 December 1881, with the Church of St. Cajetan becoming the parish church. The church was dedicated on 
+            26 September 1930. <br> <br>
+
+            <img src="san gejtanu.JPG" alt="Church" style="width:170px;height:auto;margin-right:15px;" class="infoimgleft"/>
+            <br>
+            <br>
+            
+            The titular statue depicting Saint Cajetan was sculpted between 1885 and 1888 by Karlu Darmanin, with the pedestal being made by Giovanni Farrugia and the 
+            detachable platform by Antonio Sciortino. The altarpiece depicts Saint Cajetan receiving the baby Jesus from Mary, and it was painted by the Italian artist 
+            Pietro Gagliardi. Other works of art in the church include paintings by G. Briffa, Raphael Bonnici, Ramiro Calì, Emvin Cremona and other Maltese and Italian 
+            artists.[3] The interior of the dome contains paintings by Emvin Cremona. Parts of the church's interior were altered following the Second Vatican Council, 
+            with the main altar being replaced, and some side altars being replaced by confessionals. <br> <br>
+            
+            The centenary of the parish was celebrated in 1981 with the relics of Saint Cajetan being temporarily brought over to the church. Restoration works have been 
+            undertaken on the dome interior, and on a number of paintings located in the church. Thirty solar panels were installed on the roof in 2012.
+            </span>
+        </p>
+
+        <!-- Creating the button -->
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <br>
+        <br>
+
+        <!-- Code for button to work -->
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+            
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } 
+                else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                } 
+            }
+            </script>
+            
+        <img src="Knijsa gewwa.jpeg" alt="Church" class="responsive"/>
+    </head>
+</html>

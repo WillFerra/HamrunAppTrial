@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS.css">
+        <meta name="viewport" content="width=device-width">
+        <style> 
+            h1 {text-align: center;}
+            h1 {font-family: Arial, Helvetica, sans-serif;}
+            h2 {text-align: center;}
+            h2 {font-family: Arial, Helvetica, sans-serif;}
+            p {text-align: justify;}
+            p {font-family: Arial, Helvetica, sans-serif;}
+        </style>
+
+        <body style="background-color: rgb(255, 252, 237)"></body>
+        
+        <!-- Adding the icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Add font awesome icon to buttons  -->         
+        <button onclick="window.location.href='https://goo.gl/maps/1ouCwmH4wt1ZeB5m7';" class="btn1"><i class="fa fa-compass"></i></button>
+        <button onclick="window.location.href='Clubs.html';" class="btn2"><i class="fa fa-arrow-left"></i></button>
+    
+        <!-- Adding the Hamrun Local Logo -->
+        <img src="Arma Hamrun.png" alt="Arma" class="logocentre"/>
+
+        <!-- Adding the header -->
+        <h1>Il-Ħamrun</h1>
+
+        <!-- Adding the sub-header -->
+        <h2>Civic Club</h2> 
+        
+        <!-- Adding the body -->
+        <p>
+            The Civic Club was founded in January 1954 and is found in the most central part of Hamrun, next to the Parish church of 
+            St. Cajetan.<br><br>
+ 
+            Since its foundation, the main aim of the club was to be social, recreation and educational.<br><br>
+ 
+            This club serves as a place for Hamrun locals to have a place to meet for recreational purposes in a club that is neither political 
+            nor music related. It is open for everyone without any discrimination of race, nationality or 
+            religious beliefs. <!-- Creating the Read More --> <span id="dots">...</span><span id="more"> 
+        
+            <img src="Liberty.png" alt="Hamrun Libery Logo"  style="width:170px;height:auto;margin-left:15px;" class="infoimgright"/>
+            <br>
+            <br>
+            
+            For many years, the club served as a place for Civic Council to meet, one of the first on the island. This council was similar to 
+            current local council with the difference being that the council members weren’t elected by Hamrun locals but was made up of 
+            representatives of different established clubs in Hamrun.<br><br>
+ 
+            The club was used many times as a neutral place to hold meetings between different cubs and individuals who had some kind of disputes 
+            to settle between them. The club was also used as a venue for religious, recreational, informative, cultural, and medical 
+            meetings.<br><br>
+
+            <img src="Libertydecor.jpeg" alt="Statue Liberty" style="width:170px;height:auto;margin-right:15px;" class="infoimgleft"/>
+
+            For some time, the club was used as a place for guitar and lute enthusiasts to meet as a means of relaxation whilst practicing their 
+            passion. The club has many success stories in the sports field. It had one of the best enthusiast football teams which went by the name, 
+            Hamrun Eagles. The club has many honours that it won along the years in billiard and darts.<br><br>
+ 
+            Today, the club serves as the official sede of other clubs like R.A.F.A – Royal Air Force Association, which is a club for ex-service 
+            men of the Royal Air Force. The Dun Neric Foundation also uses the club as a meeting place the foundation was founded in honour of the 
+            ex-Parish Priest Fr. Neric Cordina who was loved by many and will remain remembered for the many works, he did in the Hamrun Parish, 
+            and for starting the works on the Dome of the Church.</span>
+        </p>
+
+        <!-- Creating the button -->
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <br>
+        <br>
+
+        <!-- Code for button to work -->
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+            
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } 
+                else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                } 
+            }
+            </script>
+            
+        <img src="Libertyclub.jpeg" alt="Club" class="responsive"/>
+    </head>
+</html>

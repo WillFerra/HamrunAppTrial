@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS.css">
+        <meta name="viewport" content="width=device-width">
+        <style> 
+            h1 {text-align: center;}
+            h1 {font-family: Arial, Helvetica, sans-serif;}
+            h2 {text-align: center;}
+            h2 {font-family: Arial, Helvetica, sans-serif;}
+            p {text-align: justify;}
+            p {font-family: Arial, Helvetica, sans-serif;}
+        </style>
+
+        <body style="background-color: rgb(255, 252, 237)"></body>
+        
+        <!-- Adding the icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Add font awesome icon to buttons  -->         
+        <button onclick="window.location.href='https://goo.gl/maps/Da4BP2SEfyeJdkdz5';" class="btn1"><i class="fa fa-compass"></i></button>
+        <button onclick="window.location.href='Clubs.html';" class="btn2"><i class="fa fa-arrow-left"></i></button>
+    
+        <!-- Adding the Hamrun Local Logo -->
+        <img src="Arma Hamrun.png" alt="Arma" class="logocentre"/>
+
+        <!-- Adding the header -->
+        <h1>Il-Ħamrun</h1>
+
+        <!-- Adding the sub-header -->
+        <h2>Hamrun Spartans</h2> 
+        
+        <!-- Adding the body -->
+        <p>
+            Established in 1907, Ħamrun Spartans FC is one of the oldest clubs on the Maltese Islands. Famous for its red and black shirt, 
+            the Club has long established itself among the Maltese elite, taking home some 25 major trophies along its illustrious history. 
+            Throughout the decades, the shirt was donned by some of the best talent the islands had to offer, with these same players proving 
+            an important backbone for the national team. <!-- Creating the Read More --> <span id="dots">...</span><span id="more"> 
+        
+            <img src="spartans.jpeg" alt="Spartas Logo"  style="width:170px;height:auto;margin-left:15px;" class="infoimgright"/>
+            <br>
+            <br>
+            
+            The club represents the town of Ħamrun, an urban community with strong industrial and commercial roots just a couple of kilometres 
+            inland from the Grand Harbour. It boasts one of the most passionate set of fans, who were also decorated with the honour of best 
+            support in Malta a few years back. <br>
+
+            The Club has also set a number of important milestones for Maltese football in international commitments, being the first to quality 
+            to a second round of a UEFA club competition, and also the first to win home and away ties, a feat established in the Cup 
+            Winners Cup. <br><br>
+            
+            <img src="Spartansgear.jpeg" alt="Gear" style="width:170px;height:auto;margin-right:15px;" class="infoimgleft"/>
+
+            The Senior team currently plays in the Premier Division. The Club also includes within its ranks a Youth Team, also known as Minors 
+            (Under 19), as well as an affiliate Football Academy which provides elite training to children aged four upwards.</span>
+        </p>
+
+        <!-- Creating the button -->
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <br>
+        <br>
+
+        <!-- Code for button to work -->
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+            
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } 
+                else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                } 
+            }
+            </script>
+            
+        <img src="Champi8ns.jpeg" alt="Champions Poster" class="responsive"/>
+    </head>
+</html>

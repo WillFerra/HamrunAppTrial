@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS.css">
+        <meta name="viewport" content="width=device-width">
+        <style> 
+            h1 {text-align: center;}
+            h1 {font-family: Arial, Helvetica, sans-serif;}
+            h2 {text-align: center;}
+            h2 {font-family: Arial, Helvetica, sans-serif;}
+            p {text-align: justify;}
+            p {font-family: Arial, Helvetica, sans-serif;}
+        </style>
+
+        <body style="background-color: rgb(255, 252, 237)"></body>
+        
+        <!-- Adding the icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Add font awesome icon to buttons  -->         
+        <button onclick="window.location.href='https://goo.gl/maps/1ouCwmH4wt1ZeB5m7';" class="btn1"><i class="fa fa-compass"></i></button>
+        <button onclick="window.location.href='PlacesofInterest.html';" class="btn2"><i class="fa fa-arrow-left"></i></button>
+    
+        <!-- Adding the Hamrun Local Logo -->
+        <img src="Arma Hamrun.png" alt="Arma" class="logocentre"/>
+
+        <!-- Adding the header -->
+        <h1>Il-Ħamrun</h1>
+
+        <!-- Adding the sub-header -->
+        <h2>Immaculate Conception Parish Church</h2> 
+        
+        <!-- Adding the body -->
+        <p>
+            The Parish Church of the Immaculate Conception of Our Lady is a Roman Catholic parish church in Ħamrun, Malta. It was built 
+            between 1958 and 1963 and it took over the role of an oratory dedicated to the Immaculate Conception which had been established 
+            in Ħamrun in 1923. It has been a parish church since 1968. <!-- Creating the Read More --> <span id="dots">...</span><span id="more"> 
+        
+            <img src="Knisja.png" alt="Church"  style="width:170px;height:auto;margin-left:15px;" class="infoimgright"/>
+            <br>
+            <br>
+            
+            An oratory dedicated to the Immaculate Conception was established in Ħamrun by Paul Burlo on 15 May 1923. Initially set up within 
+            a private dwelling, its location was moved several times over the next two decades. After Burlo died in 1950, the priest Edgar Vella 
+            took over the oratory and made plans to construct a permanent church. With assistance from Archbishop Mikiel Gonzi and pastor Matthew 
+            Chircop from the St Cajetan parish, Vella acquired a plot of land which formerly contained railway tracks of the Malta Railway to build 
+            the new building. <br><br>
+
+            The new church was designed by the architect Ġużè Damato and it was built by the stonemason Geraldu Camilleri. The first stone was laid 
+            down by Bishop Emanuel Galea on 23 March 1958, and by the end of the year the basement was completed and it was being used to celebrate 
+            Mass. The building was almost complete by the time of Vella's death in 1962, but works halted soon afterwards due to a number of unpaid 
+            debts. The priest Joseph Mifsud Bonnici was later appointed to resume construction, and the building's finishing touches were made with 
+            the assistance of local volunteers. The church was inaugurated by Bishop Galea on 14 August 1963. <br><br>
+            
+            <img src="Kuncizzjoni.jpg" alt="Church" style="width:170px;height:auto;margin-right:15px;" class="infoimgleft"/>
+
+            The area in which the church was built had developed rapidly in the years following World War II. The building became a vice-parish 
+            church in 1966, and later a parish church on 1 January 1968. A parish centre and a house for the pastor were built adjacent to the church 
+            in the 1970s, and work on the church's interior was fully completed in the 1980s. It was officially consecrated by Archbishop Joseph 
+            Mercieca on 28 May 1988.</span>
+        </p>
+
+        <!-- Creating the button -->
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <br>
+        <br>
+
+        <!-- Code for button to work -->
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+            
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } 
+                else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                } 
+            }
+            </script>
+            
+        <img src="Knijsa gewwa.jpeg" alt="Church" class="responsive"/>
+    </head>
+</html>

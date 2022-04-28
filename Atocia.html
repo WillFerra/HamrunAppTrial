@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS.css">
+        <meta name="viewport" content="width=device-width">
+        <style> 
+            h1 {text-align: center;}
+            h1 {font-family: Arial, Helvetica, sans-serif;}
+            h2 {text-align: center;}
+            h2 {font-family: Arial, Helvetica, sans-serif;}
+            p {text-align: justify;}
+            p {font-family: Arial, Helvetica, sans-serif;}
+        </style>
+
+        <body style="background-color: rgb(255, 252, 237)"></body>
+        
+        <!-- Adding the icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Add font awesome icon to buttons  -->         
+        <button onclick="window.location.href='https://goo.gl/maps/1ouCwmH4wt1ZeB5m7';" class="btn1"><i class="fa fa-compass"></i></button>
+        <button onclick="window.location.href='PlacesofInterest.html';" class="btn2"><i class="fa fa-arrow-left"></i></button>
+    
+        <!-- Adding the Hamrun Local Logo -->
+        <img src="Arma Hamrun.png" alt="Arma" class="logocentre"/>
+
+        <!-- Adding the header -->
+        <h1>Il-Ħamrun</h1>
+
+        <!-- Adding the sub-header -->
+        <h2>Santctuary of Our Lady of Atocia</h2> 
+        
+        <!-- Adding the body -->
+        <p>
+            The story of the church of our Lady of Atocia dates back to the Great Siege of 1565 where several buildings were destroyed in Birgu, 
+            leading to many deaths. Along with the houses that were destroyed, was the house of Toni Spinaci. In the house that was knocked down, 
+            he had a baby girl named Elizabeth, who was sleeping in her cot, and was trapped with the rubble of the destroyed house. Her parents 
+            thought she had died but, by some miracle, she was found alive. From this incident, God continued to protect her as He needed her to 
+            spread adoration and devotion towards our Lady of Atocia.<!-- Creating the Read More --> <span id="dots">...</span><span id="more"> 
+        
+            <img src="MainAltarSamra.JPG" alt="Church Altar"  style="width:170px;height:auto;margin-left:15px;" class="infoimgright"/>
+            <br>
+            <br>
+            
+            This devotion was brought to Malta by businessman Guzepppi Casauri who was married to Elizabeth Spinaci while he was on business in 
+            Toledo who, inspired by the devotion he shared for the miraculous icon of Atocia, managed to obtain a copy of it from a friend of his. 
+            When Casauri returned to Malta he built a church, with some rooms attached to it. This church was built on another church which was in 
+            ruins and dedicated to St. Nicholas, on a hill previously known Braxia Hill. <br><br>
+
+            From then on, this hill started being referred to as Atocia Hill, while the church is known as ‘tas-Samra’ due to the dark skin complexion of 
+            Holy Mary’s face, which is identical to the one found in Madrid. Suddenly, several graces were granted thanks to the intercession of this miraculous icon, 
+            and many were those who began to visit the church and pray in front the devoted icon. <br><br>
+            
+            <img src="StatwaSamra.JPG" alt="Statue of St. Mary" style="width:170px;height:auto;margin-right:15px;" class="infoimgleft"/>
+
+            In the beginning of the 20th Century, this church was abandoned and eventually was closed. It was opened only once a year for the feast of St. Mary while, 
+            during the rest of the year, was reserved for storing of fodder, hay and straw. <br><br>
+
+            The devotion for the feast of St. Mary on the 15th of August was started by St. Ġorġ Preca and continued by priest Ġorġ Bonello, a feast which is still 
+            celebrated with great enthusiasm to this day. </span>
+        </p>
+
+        <!-- Creating the button -->
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <br>
+        <br>
+
+        <!-- Code for button to work -->
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+            
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } 
+                else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                } 
+            }
+            </script>
+            
+        <img src="FaccataSamra.JPG" alt="Church" class="responsive"/>
+    </head>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS.css">
+        <meta name="viewport" content="width=device-width">
+        <style> 
+            h1 {text-align: center;}
+            h1 {font-family: Arial, Helvetica, sans-serif;}
+            h2 {text-align: center;}
+            h2 {font-family: Arial, Helvetica, sans-serif;}
+            p {text-align: justify;}
+            p {font-family: Arial, Helvetica, sans-serif;}
+        </style>
+
+        <body style="background-color: rgb(255, 252, 237)"></body>
+        
+        <!-- Adding the icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Add font awesome icon to buttons  -->         
+        <button onclick="window.location.href='https://goo.gl/maps/1ouCwmH4wt1ZeB5m7';" class="btn1"><i class="fa fa-compass"></i></button>
+        <button onclick="window.location.href='Clubs.html';" class="btn2"><i class="fa fa-arrow-left"></i></button>
+    
+        <!-- Adding the Hamrun Local Logo -->
+        <img src="Arma Hamrun.png" alt="Arma" class="logocentre"/>
+
+        <!-- Adding the header -->
+        <h1>Il-Ħamrun</h1>
+
+        <!-- Adding the sub-header -->
+        <h2>Hamrun Liberty</h2> 
+        
+        <!-- Adding the body -->
+        <p>
+            In its early years Hamrun Liberty was the pioneer to the introduction of Hamrun's football nursery. This project saw numerous youngsters train and play 
+            football at the Mile End grounds, in the premise that one day they will make part of the Hamrun Spartans FC senior squad. The concept of youth nurseries
+            was still new on the island and Hamrun Liberty can boast that it was one of the first clubs in Malta to emulate the educational Sports Centre which had 
+            just been founded by Fr. Hilary Tagliaferro.  <!-- Creating the Read More --> <span id="dots">...</span><span id="more"> 
+        
+            <img src="Liberty.png" alt="Hamrun Libery Logo"  style="width:170px;height:auto;margin-left:15px;" class="infoimgright"/>
+            <br>
+            <br>
+            
+            Hamrun Liberty was and still is Hamrun's hub for other various sports like, Pool, Snooker, Bocci and Amateur Football. For a number of years Hamrun 
+            Liberty also boasted one of the best Basketball teams on the Maltese Islands. <br><br>
+
+            <img src="Libertydecor.jpeg" alt="Statue Liberty" style="width:170px;height:auto;margin-right:15px;" class="infoimgleft"/>
+
+            From 2005 a new branch of the club was born, "Hamrun Liberty Sezzjoni Festa" which is responsible for the funding and upkeep of a number of street 
+            decorations used solely in the feast of ‘San Gejtanu in the beginning of August.</span>
+        </p>
+
+        <!-- Creating the button -->
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <br>
+        <br>
+
+        <!-- Code for button to work -->
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+            
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } 
+                else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                } 
+            }
+            </script>
+            
+        <img src="Libertyclub.jpeg" alt="Club" class="responsive"/>
+    </head>
+</html>
