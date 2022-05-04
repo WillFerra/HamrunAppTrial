@@ -118,22 +118,6 @@ table {
     border-spacing: 15px;
 }
 
-/* Right float for images in information pages */
-.infoimgright{
-    float: right;
-    padding-left: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-/* Left float for images in information pages */
-.infoimgleft{
-    float: left;
-    padding-right: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
 /* Adding skyline image to the background */
 body { 
     background-image: url(Skyline.png);
